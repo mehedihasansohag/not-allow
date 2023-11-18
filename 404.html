@@ -2,6 +2,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Not allowed</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body style="text-align: center;margin-top: 100px;">
     <div">
@@ -209,28 +230,22 @@
         font-size: 40px;
         font-family: microsoft Yahei;
         margin-top: 20px;
-    ">What Are You Looking For</div>
+    ">Dev Tool is disabled By HalalTubeBd Developer </div>
     <div style="
         font-size: 40px;
         font-family: microsoft Yahei;
         margin-top: 10px;
-    ">From &lt;<span id="host">Me</span>&gt;?</div>
-    <script>
-        var host = getUrlParam('h');
-        if(host){
-            document.getElementById('host').innerText = host
-        }
-        function getUrlParam (name) {
-            var search = window.location.search;
-            if (search !== '') {
-                var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
-                var r = search.substr(1).match(reg);
-                if (r != null) {
-                    return unescape(r[2]);
-                }
-            }
-            return '';
-        }
-    </script>
+    " &lt;<span id="host">Click To go back to HalalTubeBD</span>&gt;?</div>
+    <button onclick="openURL()">Open URL</button>
+
+<script>
+  function openURL() {
+    // Replace 'https://example.com' with the URL you want to open
+    var url = 'https://halaltubebd.com';
+
+    // Open the URL in a new window
+    window.open(url, '_blank');
+  }
+</script>
 
 </div"></body></html>
